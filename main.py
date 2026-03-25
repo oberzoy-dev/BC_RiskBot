@@ -248,8 +248,7 @@ def main() -> None:
             BRCA_TEST:       [CallbackQueryHandler(brca_test_handler,       pattern="^(yes|no)$")],
         },
         fallbacks=[CommandHandler("cancel", cancel)],
-        allow_reentry=True,
-per_message=True, 
+        allow_reentry=True, 
     )
     app.add_handler(conv)
     logger.info("Бот (UA) запущено. Ctrl+C для зупинки.")
