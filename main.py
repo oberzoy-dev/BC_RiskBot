@@ -15,7 +15,7 @@ from telegram.ext import (
     ContextTypes, ConversationHandler,
 )
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "insert token here")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
 logger = logging.getLogger(__name__)
