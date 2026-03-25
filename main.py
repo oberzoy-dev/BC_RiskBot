@@ -249,6 +249,7 @@ def main() -> None:
         },
         fallbacks=[CommandHandler("cancel", cancel)],
         allow_reentry=True,
+        per_message=True,
     )
     app.add_handler(conv)
     logger.info("Бот (UA) запущено. Ctrl+C для зупинки.")
