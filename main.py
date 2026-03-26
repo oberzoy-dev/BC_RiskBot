@@ -255,6 +255,3 @@ def main() -> None:
     )
     app.add_handler(conv)
     logger.info("Бот (UA) запущено. Ctrl+C для зупинки.")
-
-
-
