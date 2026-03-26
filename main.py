@@ -255,3 +255,7 @@ def main() -> None:
     )
     app.add_handler(conv)
     logger.info("Бот (UA) запущено. Ctrl+C для зупинки.")
+     app.run_polling(allowed_updates=Update.ALL_TYPES)
+
+if __name__ == "__main__":
+    main()
