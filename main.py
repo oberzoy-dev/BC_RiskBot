@@ -6,7 +6,9 @@
 
 Вкажіть токен у змінній середовища BOT_TOKEN або вставте безпосередньо нижче.
 """
-
+import os
+print("Запуск бота...")
+print("TOKEN присутній:", bool(os.environ.get("BOT_TOKEN")))
 import logging
 import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
